@@ -3,31 +3,38 @@
 venv/
 env/
 
-# Python cache
+# Python cache files
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+*.pyo
+*.pyd
 
-# macOS
+# macOS files
 .DS_Store
 
-# Build output
+# Build and packaged app files
 build/
 dist/
 *.spec
 
-# Local training data
+# Personal training data
 data.csv
+personal_training_data.csv
 training_data/
 recordings/
 screenshots/
 
-# Local model experiments
-models/checkpoints/
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
 
-# Editor files
+# Editor settings
 .vscode/
 .idea/
 
-# Logs
-*.log
+# Jupyter files
+.ipynb_checkpoints/
+
+# Model experiment checkpoints
+models/checkpoints/
